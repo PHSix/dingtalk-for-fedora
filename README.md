@@ -1,3 +1,5 @@
+> update at 2022.12.09
+
 # dingtalk-for-fedora
 
 English | [中文](README_zh.md)
@@ -30,20 +32,22 @@ If you want to build it with mock, you will need to generate a source rpm first 
 cd SRPMS
 spectool -gR ../SPECS/dingtalk-bin.spec
 rpmbuild -bs ../SPECS/dingtalk-bin.spec
-mock --rebuild dingtalk-bin*.src.rpm 
+mock --rebuild dingtalk-bin*.src.rpm
 ```
 
 ## Usage
+
 This part documents common problems encountered while using this package.
 
 ### Elevator.sh is not working?
+
 DO NOT use the `Elevator.sh` provided by the package, which is deprecated. Rather, use the `/usr/bin/dingtalk` executable created by the
 package or the desktop file it created.
 
 ### Cannot Download files?
-This is reported by KDE users at the moment. If you cannot download any files, please untick the "Use System File Manager Dialog" in your 
-preferences. (Avator -> Settings -> Downloads)
 
+This is reported by KDE users at the moment. If you cannot download any files, please untick the "Use System File Manager Dialog" in your
+preferences. (Avator -> Settings -> Downloads)
 
 ## FAQ
 
